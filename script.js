@@ -73,10 +73,10 @@ document.getElementById("convertButton").addEventListener("click", function () {
       ).innerHTML = `${inputValue.value} Kilometers is equal to ${answer.toFixed(2)} Miles`;
       result.style.display = "block";
     } else if (fromUnit.value === "Miles" && toUnit.value === "Kilometers") {
-      let result = inputValue.value / 0.621371;
+      let answer = inputValue.value / 0.621371;
       document.getElementById(
         "result"
-      ).innerHTML = `${inputValue.value} Miles is equal to ${result} Kilometers`;
+      ).innerHTML = `${inputValue.value} Miles is equal to ${answer.toFixed(2)} Kilometers`;
       result.style.display = "block";
     }
   }
@@ -89,10 +89,10 @@ document.getElementById("convertButton").addEventListener("click", function () {
       ).innerHTML = `${inputValue.value} Kilograms is equal to ${answer.toFixed(2)} Pounds`;
       result.style.display = "block";
     } else if (fromUnit.value === "Pounds" && toUnit.value === "Kilograms") {
-      let result = inputValue.value / 2.20462;
+      let answer = inputValue.value / 2.20462;
       document.getElementById(
         "result"
-      ).innerHTML = `${inputValue.value} Pounds is equal to ${result} Kilograms`;
+      ).innerHTML = `${inputValue.value} Pounds is equal to ${answer.toFixed(2)} Kilograms`;
       result.style.display = "block";
     }
   }
@@ -106,10 +106,10 @@ document.getElementById("convertButton").addEventListener("click", function () {
       ).innerHTML = `${inputValue.value} Celsius is equal to ${Math.round(answer)} Fahrenheit`;
       result.style.display = "block";
     } else if (fromUnit.value === "Fahrenheit" && toUnit.value === "Celsius") {
-      let result = ((inputValue.value - 32) * 5) / 9;
+      let answer = ((inputValue.value - 32) * 5) / 9;
       document.getElementById(
         "result"
-      ).innerHTML = `${inputValue.value} Fahrenheit is equal to ${result} Celsius`;
+      ).innerHTML = `${inputValue.value} Fahrenheit is equal to ${Math.round(answer)} Celsius`;
       result.style.display = "block";
     }
   }
