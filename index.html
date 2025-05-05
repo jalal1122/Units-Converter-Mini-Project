@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Units Converter</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/unit converter.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div class="outer-container">
+      <div class="container">
+        <h1>Units Converter</h1>
+        <div class="input-container">
+          <input
+            type="number"
+            id="inputValue"
+            placeholder="Enter value"
+            required
+          />
+          <select id="unitType" required>
+            <option value="" disabled selected>Select unit type</option>
+            <option value="Distance" >↔ Distance</option>
+            <option value="Weight">⚖ Weight</option>
+            <option value="Temperature">🌡 Temperature</option>
+          </select>
+          <div>
+            <select id="fromUnit" required>
+              <option value="" disabled selected>Select from unit</option>
+              <option value="" class="fromUnit1">dynamic data here</option>
+              <option value="" class="fromUnit2">dynamic data here</option>
+            </select>
+            <select id="toUnit" required>
+              <option value="" disabled selected>Select to unit</option>
+              <option value="" class="toUnit1">dynamic data here</option>
+              <option value="" class="toUnit2">dynamic data here</option>
+            </select>
+          </div>
+        </div>
+        <div class="result-container">
+          <p id="result">khk</p>
+        </div>
+        <div class="button-div">
+          <button id="convertButton">Convert</button>
+          <button id="clearButton">Clear</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
